@@ -3,19 +3,43 @@ defmodule AdventOfCode.Day03Test do
 
   import AdventOfCode.Day03
 
-  @tag :skip
+  @input2 """
+467..114..
+...*......
+..35..633.
+......#...
+617*......
+.....+.58.
+..592.....
+......755.
+...$.*....
+.664.598..
+"""
+
+  @input """
+467..114..
+..........
+..35.1633.
+....#.....
+617*......
+.......58.
+..592.....
+......755.
+..........
+.664.598..
+"""
+
   test "part1" do
-    input = nil
+    input = @input2
     result = part1(input)
 
-    assert result
+    assert result == 4361
   end
 
-  @tag :skip
   test "part2" do
-    input = nil
+    input = @input2
     result = part2(input)
 
-    assert result
+    assert result == 467835
   end
 end
